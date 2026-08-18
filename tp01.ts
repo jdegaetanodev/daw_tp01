@@ -102,9 +102,9 @@ const filaAnimales = new FilaGenerica<Animal>();
 
 
 //Punto 10: Agregar 3 elementos en cada fila y remover uno en cada una
-filaAnimales.agregar(new Perro("Milo"));
-filaAnimales.agregar(new Vaca("Lola"));
-filaAnimales.agregar(new Gato("Miyu"));
+filaAnimales.agregar(perro);
+filaAnimales.agregar(vaca);
+filaAnimales.agregar(gato);
 
 filaNumeros.agregar(12);
 filaNumeros.agregar(90);
