@@ -65,3 +65,31 @@ enum DiasSemana {
     SABADO,
     DOMINGO
 }
+
+// Punto 7: Variable que puede contener unicamente valores de tipo number o string
+let identificador: number | string;
+
+identificador = "Messi";
+console.log(identificador);
+
+identificador = 10;
+console.log(identificador);
+
+// Punto 8: Clase generica que implementa la interfaz Fila<T>
+interface Fila<T> {
+    agregar(elemento: T): void;
+    remover(): T | undefined;
+}
+
+class FilaGenerica<T> implements Fila<T> {
+
+    private elementos: T[] = [];
+
+    agregar(elemento: T): void {
+        this.elementos.push(elemento);
+    }
+
+    remover(): T | undefined {
+        return this.elementos.shift();
+    }
+}
