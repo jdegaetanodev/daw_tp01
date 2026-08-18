@@ -93,3 +93,27 @@ class FilaGenerica<T> implements Fila<T> {
         return this.elementos.shift();
     }
 }
+
+
+//Punto 9: Crear filas declarando los tipos correspondientes en cada variable
+const filaNumeros = new FilaGenerica<number>();
+const filaStrings = new FilaGenerica<string>();
+const filaAnimales = new FilaGenerica<Animal>();
+
+
+//Punto 10: Agregar 3 elementos en cada fila y remover uno en cada una
+filaAnimales.agregar(new Perro("Milo"));
+filaAnimales.agregar(new Vaca("Lola"));
+filaAnimales.agregar(new Gato("Miyu"));
+
+filaNumeros.agregar(12);
+filaNumeros.agregar(90);
+filaNumeros.agregar(27);
+
+filaStrings.agregar("Trabajo");
+filaStrings.agregar("Práctico");
+filaStrings.agregar("01");
+
+filaAnimales.remover();
+filaNumeros.remover();
+filaStrings.remover();
